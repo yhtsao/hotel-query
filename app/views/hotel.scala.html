@@ -1,0 +1,20 @@
+@(hotels: List[Hotel])
+@main("Hotels") {
+    <ul id="hotels"></ul>
+    <table width="400">
+        <tr>
+            <th>Name</th>
+            <th>Hotel Id</th>
+            <th>Room</th>
+            <th>Price</th>
+        </tr>
+        @for(hotel <- hotels){
+            <tr>
+                <td width="10%">@hotel.city</td>
+                <td width="10%">@hotel.hotelId</td>
+                <td width="10%">@hotel.room</td>
+                <td width="10%">@hotel.price</td>
+            </tr>
+        }
+    </table>
+}
